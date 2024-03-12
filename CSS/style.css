@@ -1,0 +1,485 @@
+header{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+header img{
+    width: 61.09px;
+    height: 19px;
+    margin-top: 25px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    margin-top: 28px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-size: 16px; 
+    padding: 25px  20px 20px ;
+}
+nav li a:hover{
+    border-top: 3px #0065FC solid;
+    color: #0065FC;
+}
+
+/* ------css du main  */
+body{
+    margin: 0px 8px;
+}
+main  {
+    font-family: 'Raleway';
+    font-style: normal;
+    text-decoration: none; 
+    max-width: 1400px;
+    margin: auto;
+}
+main p{
+    font-size: 16px;
+ }
+main h1{
+    font-size: 22px;
+}
+ /* ------ CSS zone Rechercher ------- */
+.recherche{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+.icon-localisation{
+    background:#F2F2F2; 
+    padding: 16px 18px 16px 18px;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+}
+.champ-saisie{
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    border: 2px solid #F2F2F2;
+}
+#loupe-recherche{
+    color: white;
+    background: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    padding: 15px 16px;
+    font-size: 22px;
+    display: none;
+    visibility: hidden;
+}
+.boutton-recherche{
+    color: white;
+    background: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+    padding: 15px 16px;
+    font-weight: 700;
+    font-size: 20px;
+    display: inline;
+    visibility: visible;
+}
+/* -------- CSS barre de Filtrage -------- */
+.filtre{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.partie-filtre{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.partie-filtre  span{
+    font-weight: 700;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.filtre button{
+    font-size: 17px;
+    font-weight: 700;
+    padding: 10px 15px 10px 10px;
+    border: 2px #D9D9D9 solid;
+    border-radius: 20px;
+    background-color: white;
+}
+.filtre button:hover{
+    background-color: #DEEBFF;
+}
+.filtre i {  /* couleur icones des boutons */
+    color: blue;
+    padding-left: 6px;
+    padding-right: 6px;
+ }
+.bulle-info{
+    border: 1px solid #D9D9D9;
+    color:#0065FC;
+    height: fit-content;
+    padding :3px 9px 3px 9px;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
+}  
+.align-bulle-info{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.align-bulle-info p{
+    margin: 5px 0px 0px 0px;
+}
+/* --------------- CSS section hebergement a marseille -------- */
+.partie-heberg-populaire{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.partie-heberg-populaire h2{
+    font-size: 22px;
+    color: black;
+    margin: 0px 0px 20px 0px;
+}
+.partie-heberg{
+    width: 58%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 35px;
+}
+.align-carte-heberg{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 30%); 
+    grid-gap: 5%;
+    justify-content: space-between;
+    justify-items: center;
+    margin-bottom: 75px;  
+}
+.align-carte-heberg a{
+    width: 100%;
+    height: auto;
+}
+.carte-heberg{
+    background-color: white;
+    border: 4px white solid;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.carte-heberg img{
+    width: 100%;
+    height: 124px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.carte-heberg h3{
+    font-size: 16px;
+    margin: 4px 10px 4px;
+}
+.carte-heberg p{
+    font-weight: 400;
+    font-size: 14px;
+    margin: 4px 10px 6px;
+}
+.fa-star{
+    color: #0065FC;
+}
+.fa-grey{
+    color: #F2F2F2;
+}
+.lien-afficher{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+}  
+/* ------partie Les plus populaires ----- */
+.partie-popul{
+    width: 28%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 35px;
+}
+.fa-blue{
+    color: #0065FC;
+}
+.align-icone{
+    display: flex;
+    justify-content: space-between;
+}
+.align-popul{ 
+    display: flex;
+    flex-direction: column;
+    gap: 33px; 
+}
+.carte-popul{
+    background-color: white;
+    border: 4px white solid;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    gap:15px;
+}
+.carte-popul img{
+    width: 39%;
+    height: 144px;
+    object-fit: cover  ;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.carte-popul h3{
+    font-size: 16px;
+    margin-bottom: 7px;
+    font-weight: 700;
+}
+.carte-popul p{
+    font-size: 14px;
+    margin-top: 7px;
+    font-weight: 400;
+}
+.align-star{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ----------section activite à marseille -------- */
+.partie-activite h2{
+    font-size: 22px;
+    font-weight: 700;
+    color: black;
+    margin-top: 40px;
+    margin-left: 5px;
+}
+.align-activite{
+    display: flex;
+    justify-content: space-between;
+}
+.carte-activite{
+    height: 445px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.taille-carte{
+    width: 22%;
+}
+.fit-image{
+    width: 100%;
+    height: 87%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.carte-activite h3{
+    font-size: 16px;
+    font-weight: 700;
+}
+.align-text-1 {
+    margin-left: 20px;
+    margin-top: 15px;
+    font-weight: 700;
+}
+.align-text-2 {
+    margin-left: 20px;
+    margin-top: 15px;
+    font-weight: 700;
+}
+
+/* -----------------CSS Footer ------------- */
+footer{
+    background-color: #F2F2F2;
+    /* height: 225px; */
+    max-width: 1400px;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 100px;
+}
+footer ul {
+    list-style: none; 
+    margin: 43px;
+}
+footer li{
+    font-family: 'Raleway';
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 12px;
+}
+a {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+}
+.titre-footer{
+    margin-bottom: 20px;
+}
+
+/* ------ responsive --------------- */
+ @media screen and (max-width : 992px) {   /*------ Tablette ------- */
+    .partie-heberg-populaire{
+        flex-flow: column wrap;
+        row-gap: 50px;
+    }
+    .align-carte-heberg{
+        grid-template-columns: repeat(auto-fill, 30%);
+    }
+    .align-carte-heberg a{
+        width: 100%;
+    }
+    .partie-heberg{
+        width: 92%;
+    }
+    .partie-popul{
+        width: 92%;
+    }
+    .align-popul{
+        flex-flow:row;
+        justify-content: space-between;
+    }
+    .align-popul a{
+        width: 40%;
+    }
+    .carte-activite{
+        height: 267px;
+    }
+    .fit-image{
+        height: 82%;
+    }
+    .align-text-2 {
+        margin-top: 5px;
+    }
+    footer {
+        column-gap: 30px;
+    }
+    footer ul {
+        padding-left : 10px; 
+    }
+}
+ @media screen and (max-width : 768px){     /*-----------  Mobile -------------- */
+    header {
+        flex-direction: column;
+    }
+    header img{
+        margin-top: 10px;
+    }
+    footer{
+        flex-flow: column;
+    }
+    footer ul{
+        margin: 20px;
+    } 
+    .zone-recherche{
+        padding: 0px 20px;
+    }
+    body{
+        margin: 0;
+    }
+    nav ul{
+        justify-content: flex-start;
+        text-align: center;
+        padding: 0px;
+    }
+    nav li{
+        width: 50%;
+        border-bottom: 3px #F2F2F2 solid; 
+        padding-bottom: 23px;
+    }
+    header a{
+        text-align: center;
+        padding: 10px;
+    }
+    nav li a:hover{
+        border-top: none;
+        color: #0065FC; 
+    }
+    nav li:hover{
+        color: #0065FC;
+        border-color:  #0065FC ; 
+    } 
+    .boutton-recherche{
+        display: none;
+        visibility: hidden;
+    }
+    #loupe-recherche{
+        display: block;
+        visibility: visible;
+    }
+    .champ-saisie{
+        width: 50%;
+    }
+    .partie-filtre{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .filtre{
+        display: grid;
+        justify-content: space-around;
+        grid-template-columns: 46% 46%;
+        gap:15px;
+    }
+    .filtre button{
+        height: 50px;
+        text-align: left;
+        font-size: 12px;
+        border-radius: 25px;
+    }
+    .partie-heberg-populaire{
+        flex-flow: column-reverse;
+        gap: 0px;
+    }
+    .partie-popul{
+        border-radius: 0px;
+        padding: 20px;
+        width: auto;
+    }
+    .align-popul{
+        flex-flow: column;
+        gap: 15px;
+    }
+    .align-popul a{
+        width: auto;
+    }
+    .partie-heberg{
+        background-color: white;
+        border-radius: 0px;
+        padding: 20px;
+        width: auto;
+    }
+    .align-carte-heberg{
+        display: flex;
+        flex-flow: column;
+        gap: 15px;
+        margin-bottom: 0px;
+    }
+    .carte-heberg{
+        width: auto;
+    }
+    .lien-afficher{
+        font-size: 0px;
+    }
+    .align-activite{
+        flex-flow: column;
+        gap: 20px;
+        align-items: center;
+        padding: 0px 20px;
+    }
+    .partie-activite h2{
+       margin: 30px 5px 12px 25px;
+       width:200px;
+    }
+    .taille-carte{
+        width: 100%;
+    }
+    .carte-activite{
+        height: 220px;
+    }
+    .align-text-1{
+        margin-top: 5px;
+    }
+}
